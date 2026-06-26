@@ -1,0 +1,242 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --border-value : 5px;  
+}
+
+body {
+    background-image: url("./img/PortailBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 75%;
+}
+
+button {
+    border: 0px solid transparent;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 60px;
+    justify-self: center;
+    align-self: flex-end;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+
+button:hover {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 60px;
+    justify-self: center;
+    align-self: flex-end;
+    margin-top: 50px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 45px;
+    font-style: normal;
+    text-shadow: 0px 0px 10px rgb(255, 187, 0);
+}
+ 
+button:active {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 60px;
+    justify-self: center;
+    align-self: flex-end;
+    margin-top: 50px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-size: 45px;
+    font-style: normal;
+    text-shadow: 0px 0px 5px orange;
+}
+
+
+
+select {
+    background: linear-gradient(to top,rgba(28, 28, 31, 0.8),rgba(105, 130, 138, 0.8)),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 4px black;
+    color : rgba(255, 0, 0, 0.903);
+    text-shadow: 
+        0px 0px 10px red,
+        0px 0px 3px black;
+    font-family: "Rubik Wet Paint", system-ui ;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
+main section button {
+    background: 
+        linear-gradient(to top, rgba(255, 166, 0, 0.9) 40%, rgba(255, 60, 0, 0.75) 50%,rgba(89, 1, 1, 0.75) 70%),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    color: transparent;
+    filter: saturate(130%);
+    text-shadow: 0px 1px 9px rgba(255, 0, 0, 0.277);
+}
+
+main section label {
+    background: 
+        linear-gradient(to top, rgba(255, 166, 0, 0.8) 30%, rgba(255, 60, 0, 0.8) 40%,rgba(89, 1, 1, 0.8) 70%),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    filter: saturate(130%);
+    text-shadow: 0px 1px 9px rgba(255, 0, 0, 0.277);
+    font-size: larger;
+    font-weight: 600;
+}
+
+main header {
+    background: 
+        linear-gradient(to top, rgba(255, 166, 0, 0.8) 40%, rgba(255, 60, 0, 0.8) 45%,rgba(89, 1, 1, 0.8) 55%),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: transparent;
+    filter: saturate(130%);
+    text-shadow: 0px 1px 9px rgba(255, 0, 0, 0.277);
+}
+
+main input {
+    background-color: rgba(134, 134, 134, 0.179);
+    color :white;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+img {
+    width: 350px;
+}
+
+article {
+    background: 
+        linear-gradient(to top, rgba(128, 128, 128, 0.737)),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px outset rgba(128, 128, 128, 0.775);
+    border-radius: 10px;
+}
+
+article p{
+    border: 4px groove rgba(128, 128, 128, 0.727);
+    background-color: rgb(61, 58, 58);
+    text-align: center;
+    font-family: "Bigelow Rules", serif;
+    font-size: smaller;
+    padding: 0px 5px;
+    margin: 8px;
+    color: rgb(205, 203, 203);
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+    /* text-shadow: 0px 0px 8px black; */
+}
+
+.dispositionSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+}
+
+.dispositionSectionResult {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    margin-top: 75px;
+    height: 80%;
+}
+
+.dispositionSectionResult header, .dispositionSectionResult article {
+    grid-column: 2;
+}
+
+.dispoForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    height: 50%;
+}
+
+
+.dispoGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* --- Fonts --- */
+
+.bigelow {
+    font-family: "Bigelow Rules", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size:xx-large;
+}
+
+.rubik {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --- Affichage --- */
+
+.cache {
+    display: none;
+}

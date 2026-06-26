@@ -6,35 +6,50 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
 	<!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Rock+Salt&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
     <title>Machine à Invocations</title>
 
 </head>
 <body>
-    <header>
 
-    </header>
-    <main>
-        <section id="formPage">
+    <main class="bigelow" >
+        <section id="formPage" class="dispositionSection cache" >
             <header>
                 <h1>La Machine à Invocation</h1>
-                <form id="invocation" >
-                    <label for="prenom" >Prénom</label>
-                    <input id="prenom">
-
+            </header>
+            <form id="invocation" class="dispoForm" >
+                <div class="dispoGeneral">
+                    <label for="prenom" >Nomme ton invocation :</label>
+                    <input id="prenom" name="Name" type="text">
+                </div>
+                <div class="dispoGeneral">
                     <label for="creature">Créature</label>
                     <select id="creature">
-                        <option value="">Choisissez une créature !</option>
+                        <option value="" >Choisissez une créature !</option>
                         <option value="octo">🐙 le Chat-Octo</option>
                         <option value="dragon">🐉 le Dragon-Debug</option>
                         <option value="licorn">🦄 la Licorne-CSS</option>
                         <option value="fox">🦊 le Renard-Refacto</option>
                     </select>
-                    <button type="submit">...INVOQUER...</button>
-                </form>
-            </header>
+                </div>
+                
+                <button id="btnInvoc" type="button">Invoquez !</button>
+            </form>
         </section>
 
+        <section id="resultat" class="dispositionSectionResult">
+                <header>
+                    <h2>Ta créature :</h2>
+                </header>
+                <article>
+                    <img id="img" src="./img/Renardo.png" alt=""/>
+                    
+                    <p id="message" class="">Renard démoniaque à l'intelligence froide et aux griffes tachées de vieux sang. Il collectionne les crânes non par cruauté — mais par comptabilité. Chaque os représente une dette réglée.</p>
+                </article>
+        </section>
     </main>
     
 </body>
