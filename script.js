@@ -5,7 +5,9 @@
 // Renardo — Renard démoniaque à l'intelligence froide et aux griffes tachées de vieux sang. Il collectionne les crânes non par cruauté — mais par comptabilité. Chaque os représente une dette réglée.
 
 
-let name = document.querySelector("#prenom");
-let creature = document.querySelector("#creature");
+let name = document.querySelector("#prenom").value;
+let creature = document.querySelector("#creature").value;
 const btnInvoc = document.querySelector("#btnInvoc");
+const form = document.querySelector("#invocation");
+
 
