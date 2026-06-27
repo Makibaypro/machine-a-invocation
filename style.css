@@ -183,6 +183,7 @@ video {
     object-fit: fill;
     right: 19.5%;
     bottom: 25.5%;
+    -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
     mask-image: linear-gradient(to top, black 60%, transparent 100%);
 }
 
@@ -193,6 +194,7 @@ video {
     object-fit: fill;
     left: 18.5%;
     bottom: 25.5%;
+    -webkit-mask-image: linear-gradient(to top, black 60%, transparent 100%);
     mask-image: linear-gradient(to top, black 60%, transparent 100%);
 }
 
