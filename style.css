@@ -18,6 +18,24 @@ body {
 
 }
 
+#BG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./img/PortailBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#content{
+    position: relative;
+    z-index: 1;
+}
+
 main {
     display: flex;
     height: 100vh;
@@ -154,6 +172,30 @@ img {
     width: 350px;
 }
 
+video {
+    mix-blend-mode: lighten;
+}
+
+#embersR {
+    position:absolute;
+    width: 7%;
+    height: 20%;
+    object-fit: fill;
+    right: 19.5%;
+    bottom: 25.5%;
+    mask-image: linear-gradient(to top, black 60%, transparent 100%);
+}
+
+#embersL {
+    position:absolute;
+    width: 7%;
+    height: 20%;
+    object-fit: fill;
+    left: 18.5%;
+    bottom: 25.5%;
+    mask-image: linear-gradient(to top, black 60%, transparent 100%);
+}
+
 article {
     background: 
         linear-gradient(to top, rgba(49, 49, 49, 0.737)),
@@ -256,3 +298,58 @@ article p{
 .cache {
     display: none;
 }
+
+@media (max-width: 1920px) {
+    #embersR {
+        position:absolute;
+        width: 7%;
+        height: 20%;
+        object-fit: fill;
+        right: 19.5%;
+        bottom: 28.5%;
+        mask-image: linear-gradient(to top, black 60%, transparent 100%); 
+    }
+
+    #embersL {
+        position:absolute;
+        width: 7%;
+        height: 20%;
+        object-fit: fill;
+        left: 18%;
+        bottom: 28.5%;
+        mask-image: linear-gradient(to top, black 60%, transparent 100%); 
+    }
+}
+
+@media (max-width: 1620px) {
+    #embersR {
+        position:absolute;
+        width: 7%;
+        height: 20%;
+        object-fit: fill;
+        right: 19.5%;
+        bottom: 31.8%;
+        mask-image: linear-gradient(to top, black 60%, transparent 100%); 
+    }
+
+    #embersL {
+        position:absolute;
+        width: 7%;
+        height: 20%;
+        object-fit: fill;
+        left: 18%;
+        bottom: 31.8%;
+        mask-image: linear-gradient(to top, black 60%, transparent 100%); 
+    }
+}
+
+@media (max-width: 880px) {
+    #embersR {
+        display: none;
+    }
+
+    #embersL {
+        display: none;
+    }
+}
+

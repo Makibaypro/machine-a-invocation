@@ -8,13 +8,13 @@
 const name = document.querySelector("#prenom");
 const creature = document.querySelector("#creature");
 const nameResult = document.querySelector("#nameResult");
-const btnInvoc = document.querySelector("#btnInvoc");
 const btnRestart = document.querySelector("#btnRestart");
 const form = document.querySelector("#invocation"); 
 const formPage = document.querySelector("#formPage");
 const resultPage = document.querySelector("#resultat");
 const img = document.querySelector("#img");
 const message = document.querySelector("#message");
+const bodyIMG = document.querySelector("#BG");
 
 const submitForm = () => {
     if (name.value === "" && creature.value === "") {
@@ -24,6 +24,7 @@ const submitForm = () => {
         nameResult.textContent = name.value;
         formPage.classList.add("cache");
         resultPage.classList.remove("cache");
+        bodyIMG.style.filter = "blur(15px)";
         checkValue();
     }
 
@@ -72,19 +73,7 @@ const checkValue = () => {
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     submitForm();
-
-
-
-
-
 })
-
-btnInvoc.addEventListener("click", () => {
-
-    console.log(name.value)
-    console.log("click!")
-
-});
 
 btnRestart.addEventListener("click", () => {
 
@@ -92,5 +81,6 @@ btnRestart.addEventListener("click", () => {
     resultPage.classList.add("cache");
     name.value = "";
     creature.value = "";
+    bodyIMG.style.filter = "blur(0px)";
 })
 
