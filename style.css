@@ -156,7 +156,7 @@ img {
 
 article {
     background: 
-        linear-gradient(to top, rgba(128, 128, 128, 0.737)),
+        linear-gradient(to top, rgba(49, 49, 49, 0.737)),
         url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,13 +190,29 @@ article p{
 .dispositionSectionResult {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
     margin-top: 75px;
     height: 80%;
 }
 
 .dispositionSectionResult header, .dispositionSectionResult article {
     grid-column: 2;
+}
+
+.dispositionSectionResult button {
+    grid-row: 3;
+    grid-column: 2;
+    background: 
+        linear-gradient(to top, rgba(255, 166, 0, 0.8) 40%, rgba(255, 60, 0, 0.8) 45%,rgba(89, 1, 1, 0.8) 55%),
+        url("./img/colin-watts-u4ijcCaprRc-unsplash.jpg");
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    text-decoration: underline rgb(255, 145, 0) 1px;
+    color: transparent;
+    filter: saturate(130%);
+    text-shadow: 0px 1px 9px rgba(255, 0, 0, 0.277);
 }
 
 .dispoForm {

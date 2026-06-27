@@ -16,14 +16,14 @@
 <body>
 
     <main class="bigelow" >
-        <section id="formPage" class="dispositionSection cache" >
+        <section id="formPage" class="dispositionSection" >
             <header>
                 <h1>La Machine à Invocation</h1>
             </header>
             <form id="invocation" class="dispoForm" >
                 <div class="dispoGeneral">
                     <label for="prenom" >Nomme ton invocation :</label>
-                    <input id="prenom" name="Name" type="text">
+                    <input id="prenom" name="Name" type="text" />
                 </div>
                 <div class="dispoGeneral">
                     <label for="creature">Créature</label>
@@ -33,22 +33,24 @@
                         <option value="dragon">🐉 le Dragon-Debug</option>
                         <option value="licorn">🦄 la Licorne-CSS</option>
                         <option value="fox">🦊 le Renard-Refacto</option>
+                        <option value="frog">🐸 le Crapaud-Scripto</option>
                     </select>
                 </div>
                 
-                <button id="btnInvoc" type="button">Invoquez !</button>
+                <button id="btnInvoc" type="submit">Invoquez !</button>
             </form>
         </section>
 
-        <section id="resultat" class="dispositionSectionResult">
+        <section id="resultat" class="dispositionSectionResult cache">
                 <header>
-                    <h2>Ton démon</h2>
+                    <h2 id="nameResult">Ton démon</h2>
                 </header>
                 <article>
                     <img id="img" src="./img/Renardo.png" alt=""/>
 
                     <p id="message" class="">Renard démoniaque à l'intelligence froide et aux griffes tachées de vieux sang. Il collectionne les crânes non par cruauté — mais par comptabilité. Chaque os représente une dette réglée.</p>
                 </article>
+                <button id="btnRestart" type="button">Invoquer encore !</button>
         </section>
     </main>
     
